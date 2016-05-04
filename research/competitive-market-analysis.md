@@ -69,6 +69,51 @@ This is a site for kids, and it acts like a site for kids. It's using flash and 
 
 It's got different categories and is awesome for the market it serves, I'm sure.
 
+##Mobile Apps
+1. [Prompts App](http://getprompts.com/) by Tanner Christensen
+2. Brainsparker
+
+###Prompts
+This is what my MVP would be: An app that gives you a prompt, gives you a place to start writing, allows you to share/save your work, archives and tracks your progress.
+
+It's ultra simple, ultra light, and more of a first line generator than a prompt generator. Good practice and has push notifications, though. Worth $3, but not more. No social aspect, bare minimum app. Even though the focus is on content, it feels gray heavy, and instead of being reminiscient of a newspaper or b/w film or pages of a book, it feels cold and industrial. Even though you can technically share it, it basically exists in a vacuum. Cool, functional concept, though.
+
+**Strengths**
+- Fully functional, easy to use
+- Does what it says it does, and does it well
+- Automatic stats tracking
+- Automatic reminders
+- Clean design
+- Native app, great for mobile
+
+**Weaknesses**
+- No social aspect
+- Not linked to many places
+- No web app counterpart
+- No seamless way to make longform
+- Exists in a vacuum, needs community or more feedback
+
+###Brainsparker
+Brainsparker is a "creativity generator" not a strictly writing generator. Writing is an aspect of it, sure, but the community is more self-improvement and creatives-based than it is writing-focused. They have a community and are building an awesome, highly-automated creativity coaching business.
+
+Not really social, but it looks like the beginning of a community and that the service will be more social soon.
+
+The Academy workouts on the website is very much a "workout your creativity" thing, and I think I could take something from that. They're really going more for the _exercises_ over the _inspiration_ and I think they've tapped into something useful. The printouts are great for creatives, especially for the ones that like to have something tangible -- another thing I should steal.
+
+**Strengths**
+- Strong marketing site
+- downloadables
+- Lots of card packs to buy and customize
+- Modern design that feels like something "creatives" would normally use
+- Interactive and creative UX (shake to sort cards instead of tapping to generate)
+- Quotes, ideas, etc.
+
+**Weaknesses**
+- Still feels like it's growing from an inspiration app to a sort of "creativity workout"
+- It's not something that you can really _use_ but more just a "look at this" sort of thing
+- Still exists in a vacuum, no measurable stats for doing "workouts", nothing social, no community
+
+
 
 
 
