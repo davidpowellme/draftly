@@ -19,3 +19,5 @@ Have fast links to databases or have a large database in it to be able to do res
 it’d be cool if you could track your progress over a period of time - Jen U
 
 Hm. Ok. I guess probably word association, random word and picture generation, different filters to write through (like trying to write about situations in my life the way Hemingway or someone would've written about it), passages to respond to, diary type stuff but in terms I wouldn't use on my own - Lexi J
+
+I think I would want something that reminded me of daily writing challenges, maybe with some interactive tips, tricks and quotes to get my mind in check, like in Writers Inc. (i.e. just write and don't fear the rough draft, ect). I also think it would be cool to work up to different "levels" upon completion of each challenge/prompt. I tend to get more out of things if I feel like I'm working toward a goal. Also, an app that has a simple and clean layout and interface is an app that I will want to spend time on. - Caitlyn Z
