@@ -3,12 +3,15 @@
 ##User Stories
 As a user, I want to
 - Find writing inspiration by clicking/tapping a button
+- Have good prompts
 - Be kept accountable to reach a writing goal every day
 - Save my writing
 - Share my writing
 - Turn my free-writing into a longform piece
-- See what other people have written
+- See what other users have written
+- Vote/react to what other users have written
 - Have a place where I can see my archived free-writes from each day
+- Have themed writing challenges/filters to write through
 - Track my progress/streak
 - Create a profile where I can display my writing
 - Get writing tips
