@@ -5,9 +5,68 @@ HEADER
 */
 
 .site-header {
+	background: $color-light;
+	border-bottom: 1px solid $color-medium;
+	overflow: hidden;
+	padding: 1em 2em;
 	a {
+		color: $color-dark;
 		font-family: $font-headings;
 		font-weight: 400;
+		font-size: 2em;
 		text-decoration: none;
 	}
+}
+.site-title {
+	float: left;
+	width: 80%;
+}
+.site-nav {
+	display: block;
+	float: left;
+	overflow: hidden;
+	width: 20%;
+	svg {
+		float: right;
+		padding: 0.25em 0 0 0;
+		width: 2em;
+	}
+}
+
+.trigger {display: none;}
+
+@media (min-width: 900px) {
+	.site-title {width: 40%;}
+	.site-nav {
+		width: 60%;
+
+		svg {display:none;}
+	}
+	.trigger {
+		display: block;
+		float: right;
+		overflow: hidden;
+		
+		.page-link {
+			font-size: 16px;
+			display: block;
+			float: left;
+			margin-right: 2em;
+			padding: 0.6rem 0 0 0;
+
+			&:last-child{margin-right: 0;}
+
+			&:hover {border-bottom: 2px solid $color-accent;}
+		}	
+	}
+	.prof-menu {
+		background: url(/images/user1.png) 0 0 no-repeat;
+		background-size: cover;
+		border-radius: 100%;
+		display: block;
+		float: left;
+		height: 40px;
+		width: 40px;
+	}
+
 }
