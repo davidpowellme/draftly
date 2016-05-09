@@ -6,7 +6,7 @@ HEADER
 
 .site-header {
 	background: $color-light;
-	border-bottom: 1px solid $color-medium;
+	border-bottom: 1px solid lighten($color-medium, 50%);
 	overflow: hidden;
 	padding: 1em 2em;
 	a {
