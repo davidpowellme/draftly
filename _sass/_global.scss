@@ -9,6 +9,7 @@ GLOBAL
 
 body {
 	background: $color-bg;
+	color: $color-dark;
 	font-family: $font-body;
 	line-height: 1.5;
 }
@@ -28,6 +29,7 @@ h6 {
 img {max-width: 100%;}
 
 a {text-decoration:none;}
+
 
 .page-content .wrapper {
 	margin: 1rem auto;
@@ -67,7 +69,7 @@ a {text-decoration:none;}
 	div:last-child {
 		background: $color-medium;
 		max-width: 301px;
-		margin: -5px 0 0 0;
+		margin: -8px 0 0 0;
 		padding: 1em;
 
 	}
@@ -125,6 +127,36 @@ a {text-decoration:none;}
     }
 }
 
+//DASH
+
+.sub-nav {
+	border-top: 2px solid $color-dark;
+	border-bottom: 2px solid $color-dark;
+	overflow: hidden;
+
+	div:first-child {
+		background: $color-accent;
+
+		a {
+			color: $color-light;
+		}
+	}
+
+	a {
+		color: $color-dark;
+		display: block;
+		font-family: $font-headings;
+		padding: 1em;
+		text-align: center;
+	}
+}
+
+.title-cat {
+	background: url(/images/journalism.png) 0 0 no-repeat;
+	background-size: cover;
+	height: 40px;
+	width: 40px;
+}
 
 
 
