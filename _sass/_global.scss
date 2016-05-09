@@ -151,11 +151,34 @@ a {text-decoration:none;}
 	}
 }
 
+.title-wrapper {
+    overflow: hidden;
+    h2 {
+        margin: 0;
+        padding: 0.35em 0;
+
+        span {display:block;}
+
+        span:first-child {
+            float: left;
+            width: 40%;
+        }
+        span:last-child {
+            float: right;
+            width: 20%;
+        }
+    }
+
+
+}
+
 .title-cat {
-	background: url(/images/journalism.png) 0 0 no-repeat;
+	background: url(/images/essay.png) 0 0 no-repeat;
 	background-size: cover;
-	height: 40px;
-	width: 40px;
+	float: left;
+	height: 50px;
+	margin-right: 1.5em;
+	width: 50px;
 }
 
 
