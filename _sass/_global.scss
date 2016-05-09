@@ -4,6 +4,50 @@ GLOBAL
 ====================
 */
 
+
+* {box-sizing: border-box;}
+
 body {
 	background: $color-bg;
+	font-family: $font-body;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-headings;
+	text-transform: uppercase;
+}
+
+img {max-width: 100%;}
+
+.page-content .wrapper {
+	margin: 1rem auto;
+	max-width: 800px;
+	width: 90%;
+}
+
+//COURSE ICONS
+
+.courses {
+	margin: 1em auto;
+	padding: 0 1em;
+
+	a {
+		color: $color-light;
+		text-decoration: none;
+	}
+
+	h2 {margin: 0;}
+
+	div:last-child {
+		background: $color-medium;
+		max-width: 301px;
+		margin: -5px 0 0 0;
+		padding: 1em;
+
+	}
 }
