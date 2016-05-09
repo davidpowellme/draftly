@@ -75,6 +75,19 @@ a {text-decoration:none;}
 
 //FREEWRITE
 
+.prompt {
+	background: $color-accent;
+	color: $color-light;
+	padding: 1em;
+
+	h2 {
+		font-size: 1em;
+		font-weight: 400;
+		margin: 0 auto;
+		max-width: 800px;
+	}
+}
+
 .freewriter {
 	border: none;
 	height: 72vh;
