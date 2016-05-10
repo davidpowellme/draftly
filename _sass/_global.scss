@@ -40,8 +40,12 @@ a {text-decoration:none;}
 .btn {
 	border: 2px solid;
 	border-radius:3px;
+	display:block;
 	font-family: $font-headings;
+	max-width: 100%;
 	padding: 0.5em 1em;
+	text-align:center;
+	text-transform: uppercase;
 }
 
 #writing {
@@ -182,11 +186,87 @@ a {text-decoration:none;}
 }
 
 
+//INDIVIDUAL JOURNAL PAGE
 
 
+.journal-header {
+	margin-bottom: 1em;
+	overflow: hidden;
+
+	article {overflow: hidden;}
+
+	.h-first {
+
+		h2 {
+			margin: 0;
+			padding: 0.3em 0.5em;
+		}
+	}
+	.h-second {display: none;}
+}
+
+.prompt-list {
+	margin: 1em auto;
+
+	section {
+		color: $color-inactive;
+		margin: 2em auto;
+		overflow:hidden;
+
+		a {
+			color: $color-inactive;
+		}
+	}
+
+	.active {
+		background: $color-accent;
+		color: $color-light;
+		margin: 1em -2em;
+		padding: 1em 2em;
+
+		a {
+			color: $color-light;
+		}
+		article:first-child div {border-color: $color-light;}
+	}
+	
+	article {padding: 0.5em;}
+	article:first-child {
+		padding: 0;
+		div {
+			border: 2px solid $color-inactive;
+			border-radius: 50%;
+			font-size: 2.25em;
+			height: 60px;
+			margin: 0 auto;
+			padding-bottom: 12px;
+			text-align: center;
+			width: 60px;
+		}
+	}
+
+	article {
+		font-family: $font-headings;
+	}
+}
 
 
+@media (min-width: 650px) {
+	.journal-header {
+		.h-first {display: none;}
 
+		.h-second {
+			display: block;
+			margin: 0;
+		}
+	}
+	.prompt-list .active {
+		margin: 0 auto;
+		padding: 1em 0;
+	}
+
+	.j-desc {padding: 0 1em;}
+}
 
 
 
