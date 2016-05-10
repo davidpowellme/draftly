@@ -268,7 +268,32 @@ a {text-decoration:none;}
 	.j-desc {padding: 0 1em;}
 }
 
+//DAILY PROMPT PAGE
 
+.day,
+section {
+	overflow: hidden;
+}
+
+.day {
+	margin: 0 0 1em 0;
+	padding: 0 0 1em 0;
+	font-family: $font-headings;
+
+	.number {
+		background: $color-accent;
+		border-radius: 50%;
+		color: $color-light;
+		height: 24px;
+		text-align: center;
+		width: 24px;
+	}
+
+	h4 {
+		margin: 0 1em;
+		padding: 0.15em 0 0 0;
+	}
+}
 
 
 
