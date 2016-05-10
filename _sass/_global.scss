@@ -30,11 +30,20 @@ img {max-width: 100%;}
 
 a {text-decoration:none;}
 
+li {margin: 1em 0;}
+
 
 .page-content .wrapper {
 	margin: 1rem auto;
 	max-width: 800px;
 	width: 90%;
+}
+
+.caption {
+	color: $color-medium;
+	font-family: $font-headings;
+	font-size: 12px;
+	text-align: center;
 }
 
 .btn {
@@ -294,7 +303,36 @@ section {
 		padding: 0.15em 0 0 0;
 	}
 }
+.day-prompt {
 
+	.quote {
+		padding: 0 0.5em;
+	}
+	.write {
+		margin: 2em auto 1.5em auto;
+		float: none;
+		
+		.btn {
+			background: $color-accent;
+			border-color: $color-accent;
+			color: $color-light;
+		}
+	}
+}
+
+.tips {
+	font-size: 18px;
+	margin: 0 auto;
+	max-width: 700px;
+
+	h2 {
+		text-align: center;
+	}
+}
+
+@media (min-width: 650px) {
+	.quote {font-size: 2em;}
+}
 
 
 
