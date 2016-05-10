@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <nav class="sub-nav">
+      <div class="col-sm-4 col-md-2 col-lg-2">
+        <a href="#">Drafts</a>
+      </div>
+      <div class="col-sm-4 col-md-2 col-lg-2">
+        <a href="#">Posts</a>
+      </div>
+      <div class="col-sm-4 col-md-2 col-lg-2">
+        <a href="#">Leaders</a>
+      </div>
+    </nav>
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
