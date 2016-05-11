@@ -66,13 +66,10 @@ li {margin: 1em 0;}
 //COURSE ICONS
 
 .courses {
-	margin: 1em auto;
+	color: $color-light;
+	margin: 2em auto 0 auto;
 	padding: 0 1em;
-
-	a {
-		color: $color-light;
-		text-decoration: none;
-	}
+	
 
 	h2 {
 		font-size: 1.25em;
@@ -86,6 +83,14 @@ li {margin: 1em 0;}
 		padding: 1em;
 
 	}
+}
+
+.course-desc {
+	background: $color-light;
+	display: none;
+	margin: 0 auto;
+	padding: 0.5em 1em 1em 1em;
+	width: 90%;
 }
 
 //FREEWRITE
@@ -239,6 +244,23 @@ li {margin: 1em 0;}
 		}
 		article:first-child div {border-color: $color-light;}
 	}
+
+	.complete {
+		color: $color-dark;
+
+		a {
+			color: $color-light;
+		}
+		article:first-child div {
+			background: $color-dark;
+			border-color: $color-dark;
+			color: $color-light;
+		}
+		.btn {
+			border-color: $color-dark;
+			color: $color-dark;
+		}
+	}
 	
 	article {padding: 0.5em;}
 	article:first-child {
@@ -339,7 +361,7 @@ section {
 //DAY PROMPT
 
 .prompt {
-	animation: promptBar 4s linear 2s forwards;
+	animation: promptBar 500ms linear 3s forwards;
 	background: $color-accent;
 	color: $color-light;
 	font-family: $font-headings;
