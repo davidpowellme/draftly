@@ -21,37 +21,56 @@ HEADER
 	float: left;
 	width: 80%;
 }
-.site-nav {
-	display: block;
-	float: left;
-	overflow: hidden;
+.m-toggle {
+	float: right;
 	width: 20%;
+
 	svg {
+		cursor: pointer;
 		float: right;
-		padding: 0.25em 0 0 0;
+		padding: 0.5em 0 0 0;
 		width: 2em;
 	}
 }
+.site-nav {
+	clear: both;
+	display: block;
+	float: none;
+}
 
-.trigger {display: none;}
+.trigger {
+	display: none;
+	float: none;
+	padding: 2em 0 0 0;
+	text-align: center;
+
+	.page-link {
+		display: block;
+		margin: 1em 0;
+	}
+}
 
 @media (min-width: 900px) {
 	.site-title {width: 40%;}
-	.site-nav {
-		width: 60%;
 
+	.m-toggle {
 		svg {display:none;}
+	}
+	.site-nav {
+		clear: none;
+		float: left;
+		width: 60%;
 	}
 	.trigger {
 		display: block;
 		float: right;
 		overflow: hidden;
+		padding: 0;
 		
 		.page-link {
 			font-size: 16px;
-			display: block;
 			float: left;
-			margin-right: 2em;
+			margin: 0 2em 0 0;
 			padding: 0.6rem 0 0 0;
 
 			&:last-child{margin-right: 0;}

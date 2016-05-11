@@ -7,10 +7,53 @@
 </footer>
 
 <script>
+//MOBILE MENU
+
+	function menu(){
+		if( $(window).width() >= 900){
+			$('.trigger').css('display', 'block');
+			} else {
+				$('.trigger').css('display', 'none');
+			}
+		} 
+
+	$('.m-toggle').click(function(e){
+		e.preventDefault();
+		$('.trigger').slideToggle(500);
+	});
+
+
+	menu();
+
+	$(window).resize(function(){
+		menu();
+	});
+
 //JOURNALS DROPDOWN
 
-	$('.courses').click(function(){
+	$('.courses1').click(function(){
   
-	$('.course-desc').slideToggle(500);
+	$('.course-desc1').slideToggle(500);
 	});
+
+	$('.courses2').click(function(){
+  
+	$('.course-desc2').slideToggle(500);
+	});
+
+	$('.courses3').click(function(){
+  
+	$('.course-desc3').slideToggle(500);
+	});
+
+	$('.courses4').click(function(){
+  
+	$('.course-desc4').slideToggle(500);
+	});
+
+	$('.courses5').click(function(){
+  
+	$('.course-desc5').slideToggle(500);
+	});
+
 </script>

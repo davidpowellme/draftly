@@ -14,7 +14,6 @@ body {
 	line-height: 1.5;
 }
 
-
 h1,
 h2,
 h3,
@@ -65,11 +64,15 @@ li {margin: 1em 0;}
 
 //COURSE ICONS
 
-.courses {
+.courses1,
+.courses2,
+.courses3,
+.courses4,
+.courses5 {
 	color: $color-light;
+	cursor: pointer;
 	margin: 2em auto 0 auto;
-	padding: 0 1em;
-	
+	max-width: 300px;
 
 	h2 {
 		font-size: 1.25em;
@@ -85,12 +88,33 @@ li {margin: 1em 0;}
 	}
 }
 
-.course-desc {
+.course-desc1,
+.course-desc2,
+.course-desc3,
+.course-desc4,
+.course-desc5 {
 	background: $color-light;
 	display: none;
 	margin: 0 auto;
+	max-width: 300px;
 	padding: 0.5em 1em 1em 1em;
 	width: 90%;
+
+	.btn {
+		border-color: $color-dark;
+		color: $color-dark;
+	}
+}
+
+@media (min-width: 650px) {
+	.course-desc1,
+	.course-desc2,
+	.course-desc3,
+	.course-desc4,
+	.course-desc5 {
+		max-width: 800px;
+		margin: 0;
+	}
 }
 
 //FREEWRITE
