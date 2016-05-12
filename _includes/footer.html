@@ -29,31 +29,57 @@
 		menu();
 	});
 
+//FEED TABS
+
+$('.page-link').click(function(){
+  $('.page-link').removeClass('underline');
+  $(this).addClass('underline');
+  
+  $('.option').removeClass('underline');
+  
+  var toggleId = $(this).attr('data-ui');
+  
+  console.log(toggleId);
+  
+  $('#' + toggleId).addClass('underline');
+ 
+   
+});
+
 //JOURNALS DROPDOWN
 
-	$('.courses1').click(function(){
+$('.course').click(function(){
+  $('.course').removeClass('desc');
+  $(this).addClass('desc');
   
-	$('.course-desc1').slideToggle(500);
-	});
+  $('.course-desc').removeClass('desc');
+  
+  var toggleId = $(this).attr('data-ui');
+  
+  console.log(toggleId);
+  
+  $('#' + toggleId).addClass('desc');
+ 
+   
+});
 
-	$('.courses2').click(function(){
-  
-	$('.course-desc2').slideToggle(500);
-	});
+//FEED TABS
 
-	$('.courses3').click(function(){
+$('.ftab').click(function(){
+  $('.ftab').removeClass('display');
+  $(this).addClass('display');
   
-	$('.course-desc3').slideToggle(500);
-	});
+  $('.option').removeClass('display');
+  
+  var toggleId = $(this).attr('data-ui');
+  
+  console.log(toggleId);
+  
+  $('#' + toggleId).addClass('display');
+ 
+   
+});
 
-	$('.courses4').click(function(){
-  
-	$('.course-desc4').slideToggle(500);
-	});
 
-	$('.courses5').click(function(){
-  
-	$('.course-desc5').slideToggle(500);
-	});
 
 </script>

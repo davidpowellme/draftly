@@ -35,6 +35,7 @@ li {margin: 1em 0;}
 .page-content .wrapper {
 	margin: 1rem auto;
 	max-width: 800px;
+	overflow: hidden;
 	width: 90%;
 }
 
@@ -51,10 +52,42 @@ li {margin: 1em 0;}
 	display:block;
 	font-family: $font-headings;
 	max-width: 100%;
-	padding: 0.5em 1em;
+	padding: 0.5em;
 	text-align:center;
 	text-transform: uppercase;
 }
+
+.dark {
+	border-color: $color-dark;
+	color: $color-dark;
+
+	&:hover {
+		background: $color-dark;
+		color: $color-light;
+	}
+}
+
+.light {
+	border-color: $color-light;
+	color: $color-light;
+
+	&:hover {
+		background: $color-light;
+		color: $color-dark;
+	}
+}
+
+.locked {
+	border-color: $color-inactive;
+	color: $color-inactive;
+	cursor: default;
+}
+
+main.display {
+	display: block;
+}
+
+.row {overflow:hidden;}
 
 #writing {
 	background: $color-light;
@@ -64,6 +97,8 @@ li {margin: 1em 0;}
 
 //COURSE ICONS
 
+.course {margin-top: 2em;}
+
 .courses1,
 .courses2,
 .courses3,
@@ -71,47 +106,65 @@ li {margin: 1em 0;}
 .courses5 {
 	color: $color-light;
 	cursor: pointer;
-	margin: 2em auto 0 auto;
+	margin: 0 auto;
 	max-width: 300px;
 
 	h2 {
-		font-size: 1.25em;
+		font-size: 12px;
 		margin: 0;
 	}
 
 	div:last-child {
 		background: $color-medium;
-		max-width: 301px;
+		max-width: 300px;
 		margin: -8px 0 0 0;
-		padding: 1em;
+		padding: 1em 0.5em;
 
 	}
 }
 
-.course-desc1,
-.course-desc2,
-.course-desc3,
-.course-desc4,
-.course-desc5 {
-	background: $color-light;
+.course-desc {
 	display: none;
 	margin: 0 auto;
-	max-width: 300px;
 	padding: 0.5em 1em 1em 1em;
-	width: 90%;
 
-	.btn {
-		border-color: $color-dark;
-		color: $color-dark;
+	article div:last-child {overflow:hidden;}
+}
+
+.desc {
+	background: $color-light;
+	display: block;
+	
+	.courses1,
+	.courses2,
+	.courses3,
+	.courses4,
+	.courses5 {
+		
+		div:last-child {background: $color-light;}
+	
 	}
+
+
+	h2 {
+		color: $color-accent;
+	}
+
 }
 
 @media (min-width: 650px) {
-	.course-desc1,
-	.course-desc2,
-	.course-desc3,
-	.course-desc4,
-	.course-desc5 {
+	.courses1,
+	.courses2,
+	.courses3,
+	.courses4,
+	.courses5 {
+		h2 {
+			font-size: 1.25em;
+			padding-left: 0.5em;
+		}
+	}
+
+	.course-desc {
 		max-width: 800px;
 		margin: 0;
 	}
@@ -159,9 +212,6 @@ li {margin: 1em 0;}
     article:last-child {overflow: hidden;}
 
     .btn {
-    	border-color: $color-light;
-    	color: $color-light;
-    	display: block;
     	float: right;
     	margin: 0 0.5em;
 
@@ -176,14 +226,6 @@ li {margin: 1em 0;}
 	border-top: 2px solid $color-dark;
 	border-bottom: 2px solid $color-dark;
 	overflow: hidden;
-
-	div:first-child {
-		background: $color-accent;
-
-		a {
-			color: $color-light;
-		}
-	}
 
 	a {
 		color: $color-dark;
@@ -251,10 +293,6 @@ li {margin: 1em 0;}
 		color: $color-inactive;
 		margin: 2em auto;
 		overflow:hidden;
-
-		a {
-			color: $color-inactive;
-		}
 	}
 
 	.active {
@@ -447,6 +485,7 @@ section {
 		background: $color-light;
 		margin: 1em auto;
 		padding: 0.5em;
+
 	}
 
 	.username {padding: 0.75em 0 0 0}
@@ -470,4 +509,26 @@ section {
 	}
 }
 
+.sub-nav {
+	.display {
+		.feed-tabs {
+			background: $color-accent;
+			color: $color-light;
+		}
+	}
+}
+
+
+.option {display: none;}
+
+.link {
+	background: url(https://source.unsplash.com/random/800x600) 0 0 no-repeat;
+	background-size: cover;
+	margin-bottom: 1em;
+	padding: 10em 0;
+}
+
+@media (min-width: 650px) {
+	.feed .post {padding: 0.5em 1em;}
+}
 

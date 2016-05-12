@@ -50,6 +50,10 @@ HEADER
 	}
 }
 
+.underline {
+	border-bottom: 2px solid $color-accent;
+}
+
 @media (min-width: 900px) {
 	.site-title {width: 40%;}
 
