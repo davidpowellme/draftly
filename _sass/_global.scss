@@ -58,6 +58,10 @@ li {margin: 1em 0;}
 	padding: 0.5em 1em;
 	text-align:center;
 	text-transform: uppercase;
+
+	span {
+		display: none;
+	}
 }
 
 .dark {
@@ -562,6 +566,33 @@ section {
 }
 
 
+//PROFILE
 
+.prof-header {
+	overflow: hidden;
+
+	.btn {
+		overflow: hidden;
+	}
+
+	i {
+		float: left;
+	}
+
+	article {
+		overflow: hidden;
+	}
+}
+
+.user-info {
+	font-family: $font-headings;
+}
+
+@media (min-width: 650px) {
+	.btn span {
+		display: block;
+		float: left;
+	}
+}
 
 
