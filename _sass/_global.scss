@@ -47,11 +47,14 @@ li {margin: 1em 0;}
 }
 
 .btn {
+	background: transparent;
 	border: 2px solid;
 	border-radius:3px;
+	cursor: pointer;
 	display:block;
 	font-family: $font-headings;
 	max-width: 100%;
+	outline: none;
 	padding: 0.5em;
 	text-align:center;
 	text-transform: uppercase;
