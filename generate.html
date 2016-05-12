@@ -1,11 +1,20 @@
 ---
-layout: default
+layout: generator
 permalink: ../generate/
 ---
-<div id="prompt"></div>
 
-<input class="btn dark" type="button" value="Generate" onclick="postmessage();" />
+<section class="col-sm-12 col-md-12 col-lg-12">
+	<div class="prompt-text" id="prompt">Tap Generate to get a random prompt</div>	
+</section>
+<section class="col-sm-12 col-md-12 col-lg-12" id="generator">
+	<div class="col-sm-6 col-md-4 col-lg-3">
+		<input class="btn light generate" type="button" value="Generate" onclick="postmessage();" />	
+	</div>
+	<div class="col-sm-6 col-md-4 col-lg-3">
+		<div class="btn light write">Write</div>
+	</div>
+</section>
 
-<input class="btn dark write" type="button" value="Write" onclick="startwriting();" />
-
-<textarea name="" id="writer" cols="30" rows="10"></textarea>
+<section class="col-sm-12 col-md-12 col-lg-12" id="writer">
+	<textarea placeholder="start writing pls" name="" cols="30" rows="10"></textarea>	
+</section>

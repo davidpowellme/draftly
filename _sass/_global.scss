@@ -55,7 +55,7 @@ li {margin: 1em 0;}
 	font-family: $font-headings;
 	max-width: 100%;
 	outline: none;
-	padding: 0.5em;
+	padding: 0.5em 1em;
 	text-align:center;
 	text-transform: uppercase;
 }
@@ -93,6 +93,9 @@ textarea {
 main.display {
 	display: block;
 }
+
+.display {display: none;}
+.none {display: none;}
 
 .row {overflow:hidden;}
 
@@ -531,7 +534,32 @@ section {
 
 //RANDOM
 
+.g-page {
+	background: $color-accent;
+}
 #writer {display: none;}
+
+.slide-up {
+	bottom: 0;
+}
+
+#generator {
+	background: $color-dark;
+	padding: 1em;
+	position: fixed;
+	left: 0; bottom: 0;
+}
+
+.prompt-text {
+	color: $color-light;
+	font-family: $font-headings;
+	font-size: 2em;
+	padding: 0 0.5em;
+}
+
+.writing {
+	font-size: 1em;
+}
 
 
 
