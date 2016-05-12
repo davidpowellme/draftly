@@ -83,6 +83,10 @@ li {margin: 1em 0;}
 	cursor: default;
 }
 
+textarea {
+	font-size: 1.25em;
+}
+
 main.display {
 	display: block;
 }
@@ -301,26 +305,16 @@ main.display {
 		margin: 1em -2em;
 		padding: 1em 2em;
 
-		a {
-			color: $color-light;
-		}
 		article:first-child div {border-color: $color-light;}
 	}
 
 	.complete {
 		color: $color-dark;
 
-		a {
-			color: $color-light;
-		}
 		article:first-child div {
 			background: $color-dark;
 			border-color: $color-dark;
 			color: $color-light;
-		}
-		.btn {
-			border-color: $color-dark;
-			color: $color-dark;
 		}
 	}
 	
