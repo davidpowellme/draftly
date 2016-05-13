@@ -51,7 +51,7 @@ li {margin: 1em 0;}
 }
 
 .page-content .dash {
-	max-width: 1000px;
+	max-width: 1200px;
 }
 
 .caption {
@@ -733,8 +733,8 @@ section {
 		.active {
 		background: $color-accent;
 		color: $color-light;
-		margin: 1em -1em;
-		padding: 1em 0.5em;
+		margin: 1em 0;
+		padding: 1em 2em;
 
 		article:first-child div {border-color: $color-light;}
 	}
@@ -761,6 +761,11 @@ section {
 	.third {
 		background: url(../images/essay.png) 0 0 no-repeat;
 		background-size: cover;
+	}
+
+	//SIDEBAR
+	#sidebar {
+		float: right;
 	}
 
 	//STATS
