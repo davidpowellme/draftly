@@ -54,20 +54,24 @@ $('.page-link').click(function(){
 
 $('.course').click(function(){
   
+  var isActive = $(this).hasClass('desc');
+
   $('.course-desc').removeClass('desc');
   $('.course').removeClass('desc');
 
-  $(this).toggleClass('desc');
+  if(!isActive) {
 
-  // $('.course-desc').slideToggle(1000);
-  
-  var toggleId = $(this).attr('data-ui');
-  
-  console.log(toggleId);
-  
-  $('#' + toggleId).toggleClass('desc');
+    $(this).toggleClass('desc');
 
-  
+    // $('.course-desc').slideToggle(1000);
+    
+    var toggleId = $(this).attr('data-ui');
+    
+    console.log(toggleId);
+    
+    $('#' + toggleId).toggleClass('desc');
+
+  }
   // if($('#' + toggleId).hasClass('desc')){
   //   console.log('has class');
   //   $('#' + toggleId).removeClass('desc');
