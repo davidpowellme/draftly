@@ -436,12 +436,10 @@ section {
 	padding: 2em 0;
 	text-transform: uppercase;
 
-	div {
-		margin: 0 auto;
-		max-width: 700px;
-		width: 90%;
-	}
+	div {font-size: 1.5em;}
 }
+
+
 
 @keyframes promptBar {
 	0% {
@@ -455,6 +453,88 @@ section {
 		padding: 1em 0;
 	}
 }
+
+//PIE TIMER
+
+#timer {
+	animation: away 500ms linear forwards 3s;
+	height:100px;
+  	margin:auto;
+	position:relative;
+	width:100px;
+}
+
+@keyframes away {
+	from {
+		opacity:1;
+		transform: scale(1);
+	}
+	to {
+		opacity: 0;
+		height: 1px;
+		width: 1px;
+	}
+}
+
+
+.circle {
+	border-radius:50%;
+	bottom:1px;
+	left:1px;
+	position:absolute;
+	right:1px;
+	top:1px;
+}
+
+/* z-index */
+
+
+#color-left {z-index:2;}
+#color-right {z-index:3;}
+#cover {z-index:4;}
+
+/* backgrounds */
+#cover {
+	background:-webkit-linear-gradient(left, transparent 0, transparent 50%, $color-accent 50%, $color-accent 100%);
+}
+
+.color {
+	background:-webkit-linear-gradient(left, transparent 0, transparent 50%, $color-light 50%, $color-light 100%);
+}
+
+#cover {
+	bottom:0;
+	left:0;
+	right:0;
+	top:0;
+	visibility:hidden;
+}
+
+#color-left {-webkit-transform:rotate(180deg);}
+
+@-webkit-keyframes firstspin {
+ 0% {visibility:visible;-webkit-transform:rotate(0);}
+ 50% {visibility:visible;-webkit-transform:rotate(180deg);}
+ 50% {visibility:hidden;-webkit-transform:rotate(180deg);}
+ 100% {visibility:hidden;-webkit-transform:rotate(180deg);}
+}
+
+@-webkit-keyframes secondspin {
+ 0% {visibility:hidden;-webkit-transform:rotate(0);}
+ 50% {visibility:hidden;-webkit-transform:rotate(0);}
+ 50% {visibility:visible;-webkit-transform:rotate(0);}
+ 100% {visibility:visible;-webkit-transform:rotate(180deg);}
+}
+
+#cover, #color-left {
+	-webkit-animation-duration: 3s;
+	-webkit-animation-iteration-count:1;
+	-webkit-animation-timing-function: linear;
+}
+
+#cover {-webkit-animation-name: firstspin;}
+#color-left {-webkit-animation-name: secondspin;}
+
 
 
 //FEED

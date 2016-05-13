@@ -8,29 +8,31 @@
     {% include header.html %}
 
       <header class="prompt">
-  <div>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-  </div>
-</header>
-    <div class="page-content">
-      <div class="wrapper" id="writing">
-        {{ content }}
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </div>
+        <div id="timer">
+          <div id="cover" class="circle"></div>
+          <div id="color-left" class="color circle"></div>
+          <div id="color-right" class="color circle"></div>
+        </div>     
+      </header>
+      <div class="page-content">
+          <div class="wrapper" id="writing">
+              {{ content }}
+          </div>
       </div>
-    </div>
-
-    {% include footer.html %}
-
-    <footer class="write-bar">
-      <article class="col-sm-5 col-med-6 col-lg-6">
-        <div>60 words</div>
-        <div>1:07 minutes</div>
-      </article>
-      <article class="col-sm-7 col-med-6 col-lg-6">
-        <a href="../complete/" class="btn light">Save</a>
-        <a href="#" class="btn light">Share</a>
-      </article>
-    </footer>
-
+      {% include footer.html %}
+      <footer class="write-bar">
+          <article class="col-sm-5 col-med-6 col-lg-6">
+              <div>60 words</div>
+              <div>1:07 minutes</div>
+          </article>
+          <article class="col-sm-7 col-med-6 col-lg-6">
+              <a href="../complete/" class="btn light">Save</a>
+              <a href="#" class="btn light">Share</a>
+          </article>
+      </footer>
   </body>
 
 </html>
