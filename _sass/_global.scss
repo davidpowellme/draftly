@@ -113,6 +113,11 @@ main.display {
 
 .course {margin-top: 2em;}
 
+.level-1 {
+	background: $color-light;
+	max-height: 256px;
+}
+
 .courses1,
 .courses2,
 .courses3,
