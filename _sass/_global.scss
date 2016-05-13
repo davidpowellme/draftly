@@ -50,6 +50,10 @@ li {margin: 1em 0;}
 	width: 90%;
 }
 
+.page-content .dash {
+	max-width: 1000px;
+}
+
 .caption {
 	color: $color-medium;
 	font-family: $font-headings;
@@ -710,6 +714,62 @@ section {
 		display: block;
 		float: left;
 	}
+}
+
+//DASHBOARD
+
+#dash-journals {
+
+	h1 {
+		margin: 0 0 1em 0;
+	}
+
+	section,
+	aside section {
+		background: $color-light;
+		margin-bottom: 1em;
+		padding: 1em;
+
+		.active {
+		background: $color-accent;
+		color: $color-light;
+		margin: 1em -1em;
+		padding: 1em 0.5em;
+
+		article:first-child div {border-color: $color-light;}
+	}
+	}
+
+	aside section {
+		margin-bottom: 1em;
+	}
+
+	//DIFFERENT PICTURES
+
+	.title-wrapper {
+		border-bottom: none;
+	}
+	.title-cat {
+		background: url(../images/travel.png) 0 0 no-repeat;
+		background-size: cover;
+	}
+
+	.second {
+		background: url(../images/fantasy.png) 0 0 no-repeat;
+		background-size: cover;
+	}
+	.third {
+		background: url(../images/essay.png) 0 0 no-repeat;
+		background-size: cover;
+	}
+
+	//STATS
+
+	.stats {
+		text-align: center;
+	}
+
+
 }
 
 
