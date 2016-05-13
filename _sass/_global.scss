@@ -251,7 +251,9 @@ main.display {
 }
 
 .title-wrapper {
+	border-bottom: 2px solid $color-inactive;
     overflow: hidden;
+    padding-bottom: 1em;
     h2 {
         margin: 0;
         padding: 0.35em 0;
@@ -264,12 +266,14 @@ main.display {
         }
         span:last-child {
             float: right;
+            text-align: right;
             width: 20%;
         }
     }
 
 
 }
+
 
 .title-cat {
 	background: url(../images/essay.png) 0 0 no-repeat;
@@ -280,6 +284,15 @@ main.display {
 	width: 50px;
 }
 
+.journalism {
+	background: url(../images/journalism.png) 0 0 no-repeat;
+	background-size: cover;
+}
+
+.travel {
+	background: url(../images/travel.png) 0 0 no-repeat;
+	background-size: cover;
+}
 
 //INDIVIDUAL JOURNAL PAGE
 
