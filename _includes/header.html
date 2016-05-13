@@ -3,9 +3,10 @@
   <div class="wrapper">
 
     <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-    <nav class="site-nav">
+    <div class="m-toggle">
       <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:5px;}.cls-2{font-size:16px;font-family:Montserrat;font-weight:700;}</style></defs><title>mockup</title><line class="cls-1" x1="7.25" y1="6.94" x2="53.75" y2="6.94"/><line class="cls-1" x1="7.25" y1="20.36" x2="53.75" y2="20.36"/><line class="cls-1" x1="7.25" y1="33.79" x2="53.75" y2="33.79"/><text class="cls-2" transform="translate(5.25 57.06)">MENU</text></svg>
+    </div>
+    <nav class="site-nav">
       <div class="trigger">
         {% for my_page in site.pages %}
           {% if my_page.title %}

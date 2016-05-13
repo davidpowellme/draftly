@@ -5,3 +5,166 @@
   </div>
 
 </footer>
+
+<script>
+//MOBILE MENU
+
+	function menu(){
+		if( $(window).width() >= 900){
+			$('.trigger').css('display', 'block');
+			} else {
+				$('.trigger').css('display', 'none');
+			}
+		} 
+
+	$('.m-toggle').click(function(e){
+		e.preventDefault();
+		$('.trigger').slideToggle(500);
+	});
+
+
+	menu();
+
+	$(window).resize(function(){
+		menu();
+	});
+
+//MENU TABS
+
+$('.page-link').click(function(){
+  $('.page-link').removeClass('underline');
+  $(this).addClass('underline');
+  
+  $('.option').removeClass('underline');
+  
+  var toggleId = $(this).attr('data-ui');
+  
+  console.log(toggleId);
+  
+  $('#' + toggleId).addClass('underline');
+ 
+   
+});
+
+//JOURNALS DROPDOWN
+
+$('.course').click(function(){
+  $('.course').removeClass('desc');
+  $(this).addClass('desc');
+  
+  $('.course-desc').removeClass('desc');
+
+  // $('.course-desc').slideToggle(1000);
+  
+  var toggleId = $(this).attr('data-ui');
+  
+  console.log(toggleId);
+  
+  $('#' + toggleId).addClass('desc');
+ 
+   
+});
+
+//FEED TABS
+
+$('.ftab').click(function(){
+  $('.ftab').removeClass('display');
+  $(this).addClass('display');
+  
+  $('.option').removeClass('display');
+  
+  var toggleId = $(this).attr('data-ui');
+  
+  console.log(toggleId);
+  
+  $('#' + toggleId).addClass('display');
+ 
+   
+});
+
+//RANDOM PROMPT
+
+function postmessage() {
+  var firstnames = ["Brunch sustainable flexitarian shabby chic, banh mi beard mlkshk listicle chillwave YOLO lumbersexual pinterest sriracha.", "Vinyl flannel pork belly, +1 direct trade waistcoat locavore sustainable iPhone mlkshk offal affogato cronut. Messenger bag sustainable selfies meggings quinoa, cardigan yr sriracha.", "Small batch shabby chic meh, chillwave DIY XOXO cred craft beer selfies photo booth farm-to-table.", "Tofu listicle lomo butcher, quinoa paleo pickled freegan affogato hashtag schlitz keffiyeh marfa hammock.", "Portland 90's swag, yr banjo ethical chicharrones umami art party sriracha green juice kombucha keytar fixie farm-to-table.", "Microdosing street art mixtape seitan jean shorts celiac skateboard, ramps occupy bushwick flexitarian.", ];
+  var firstname = firstnames[Math.floor(Math.random() * firstnames.length)];
+  document.getElementById("prompt").textContent = firstname;
+};
+
+$('.write').click(function(){
+
+  $('#writer').slideToggle(1000);
+
+  $('.prompt-text').toggleClass('writing');
+
+  $('.generate').toggleClass('none');
+
+});
+</script>
+
+<!--MODAL IMPORTANT-->
+
+<script>
+  // window.REMODAL_GLOBALS = {
+  //   NAMESPACE: 'remodal',
+  //   DEFAULTS: {
+  //     hashTracking: true,
+  //     closeOnConfirm: true,
+  //     closeOnCancel: true,
+  //     closeOnEscape: true,
+  //     closeOnOutsideClick: true,
+  //     modifier: ''
+  //   }
+  // };
+</script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../libs/jquery/dist/jquery.min.js"><\/script>')</script>
+<script src="../dist/remodal.js"></script>
+
+<!-- Events -->
+<script>
+  $(document).on('opening', '.remodal', function () {
+    console.log('opening');
+  });
+
+  $(document).on('opened', '.remodal', function () {
+    console.log('opened');
+  });
+
+  $(document).on('closing', '.remodal', function (e) {
+    console.log('closing' + (e.reason ? ', reason: ' + e.reason : ''));
+  });
+
+  $(document).on('closed', '.remodal', function (e) {
+    console.log('closed' + (e.reason ? ', reason: ' + e.reason : ''));
+  });
+
+  $(document).on('confirmation', '.remodal', function () {
+    console.log('confirmation');
+  });
+
+  $(document).on('cancellation', '.remodal', function () {
+    console.log('cancellation');
+  });
+
+//  Usage:
+//  $(function() {
+//
+//    // In this case the initialization function returns the already created instance
+//    var inst = $('[data-remodal-id=modal]').remodal();
+//
+//    inst.open();
+//    inst.close();
+//    inst.getState();
+//    inst.destroy();
+//  });
+
+  //  The second way to initialize:
+  $('[data-remodal-id=modal2]').remodal({
+    modifier: 'with-red-theme'
+  });
+
+
+
+
+</script>
