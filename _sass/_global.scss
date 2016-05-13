@@ -25,9 +25,20 @@ h6 {
 	text-transform: uppercase;
 }
 
-img {max-width: 100%;}
+img,
+iframe {max-width: 100%;}
 
 a {text-decoration:none;}
+
+ul {
+	overflow: hidden;
+	padding: 0;
+}
+
+ul div {
+	overflow:hidden;
+
+}
 
 li {margin: 1em 0;}
 
@@ -115,7 +126,6 @@ main.display {
 
 .level-1 {
 	background: $color-light;
-	max-height: 256px;
 }
 
 .courses1,
@@ -224,7 +234,7 @@ main.display {
     font-family: $font-headings;
     overflow: hidden;
     padding: 1em;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
 
@@ -386,6 +396,12 @@ main.display {
 
 //DAILY PROMPT PAGE
 
+
+.iframe-wrapper {
+	margin: 0 auto;
+	max-width: 560px;
+}
+
 .day,
 section {
 	overflow: hidden;
@@ -406,7 +422,7 @@ section {
 	}
 
 	h4 {
-		margin: 0 1em;
+		margin: 0;
 		padding: 0.15em 0 0 0;
 	}
 }
@@ -439,6 +455,11 @@ section {
 
 @media (min-width: 650px) {
 	.quote {font-size: 2em;}
+}
+
+@media (min-width: 900px) {
+	ul div li:first-child {float: left;}
+	ul div li:last-child {float: right;}
 }
 
 

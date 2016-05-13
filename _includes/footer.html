@@ -6,6 +6,10 @@
 
 </footer>
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../libs/jquery/dist/jquery.min.js"><\/script>')</script>
+<script src="../dist/remodal.js"></script>
+
 <script>
 //MOBILE MENU
 
@@ -49,10 +53,11 @@ $('.page-link').click(function(){
 //JOURNALS DROPDOWN
 
 $('.course').click(function(){
-  $('.course').removeClass('desc');
-  $(this).addClass('desc');
   
   $('.course-desc').removeClass('desc');
+  $('.course').removeClass('desc');
+
+  $(this).toggleClass('desc');
 
   // $('.course-desc').slideToggle(1000);
   
@@ -60,7 +65,16 @@ $('.course').click(function(){
   
   console.log(toggleId);
   
-  $('#' + toggleId).addClass('desc');
+  $('#' + toggleId).toggleClass('desc');
+
+  
+  // if($('#' + toggleId).hasClass('desc')){
+  //   console.log('has class');
+  //   $('#' + toggleId).removeClass('desc');
+  // }
+  // else {
+  //   $('#' + toggleId).addClass('desc');
+  // }
  
    
 });
@@ -117,9 +131,7 @@ $('.write').click(function(){
   // };
 </script>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../libs/jquery/dist/jquery.min.js"><\/script>')</script>
-<script src="../dist/remodal.js"></script>
+
 
 <!-- Events -->
 <script>
