@@ -68,6 +68,7 @@ li {margin: 1em 0;}
 	cursor: pointer;
 	display:block;
 	font-family: $font-headings;
+	font-size: 14px;
 	max-width: 100%;
 	outline: none;
 	padding: 0.5em 1em;
@@ -77,6 +78,10 @@ li {margin: 1em 0;}
 	span {
 		display: none;
 	}
+}
+
+@media (min-width: 650px) {
+	.btn {font-size: 1em;}
 }
 
 .dark {
@@ -360,18 +365,18 @@ main.display {
 		}
 	}
 	
-	article {padding: 0.5em;}
+	article {padding: 0.5em 0;}
 	article:first-child {
-		padding: 0;
+		padding: 0.35em 0;
 		div {
 			border: 2px solid $color-inactive;
 			border-radius: 50%;
-			font-size: 2.25em;
-			height: 60px;
+			font-size: 2em;
+			height: 50px;
 			margin: 0 auto;
 			padding-bottom: 12px;
 			text-align: center;
-			width: 60px;
+			width: 50px;
 		}
 	}
 
@@ -733,8 +738,8 @@ section {
 		.active {
 		background: $color-accent;
 		color: $color-light;
-		margin: 1em 0;
-		padding: 1em 2em;
+		margin: 1em -0.5em;
+		padding: 1em 0.5em;
 
 		article:first-child div {border-color: $color-light;}
 	}
@@ -748,6 +753,10 @@ section {
 
 	.title-wrapper {
 		border-bottom: none;
+
+		a {
+			color: $color-dark;
+		}
 	}
 	.title-cat {
 		background: url(../images/travel.png) 0 0 no-repeat;
@@ -755,7 +764,7 @@ section {
 	}
 
 	.second {
-		background: url(../images/fantasy.png) 0 0 no-repeat;
+		background: url(../images/journalism.png) 0 0 no-repeat;
 		background-size: cover;
 	}
 	.third {
