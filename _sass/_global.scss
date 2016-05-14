@@ -32,7 +32,6 @@ a {text-decoration:none;}
 
 ul {
 	overflow: hidden;
-	padding: 0;
 }
 
 ul div {
@@ -455,6 +454,25 @@ section {
 			border-color: $color-accent;
 			color: $color-light;
 		}
+	}
+}
+
+.wp-wrapper {
+	margin-right: 1em;
+}
+
+.writer-pic {
+	border-radius: 50%;
+}
+.inline-block {
+	display: inline-block;
+	vertical-align: middle;
+
+	&:first-child {
+		width: 30%;
+	}
+	&:last-child {
+		width: 69%
 	}
 }
 
