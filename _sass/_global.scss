@@ -400,6 +400,16 @@ main.display {
 	.prompt-list .active {
 		margin: 0 auto;
 		padding: 1em 0;
+
+		article:first-child {
+			padding: 0.15em 0;
+			div {
+				font-size: 2em;
+				height: 60px;
+				padding: 0.1em;
+				width: 60px;
+			}
+		}
 	}
 
 	.j-desc {padding: 0 1em;}
@@ -726,9 +736,8 @@ section {
 //DASHBOARD
 
 #dash-journals {
-
 	h1 {
-		margin: 0 0 1em 0;
+		margin: 1em 0 0.5em 0;
 	}
 
 	section,
@@ -791,6 +800,14 @@ section {
 		margin: 1em auto;
 		max-width: 300px;
 	}
+	
+	.post {
+		.fa {
+			font-size: 1.25em;
+			padding-top: 0.5em;
+		}
+	}
+	.medium {float: right;}
 
 }
 
