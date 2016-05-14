@@ -343,14 +343,15 @@ main.display {
 	section {
 		color: $color-inactive;
 		margin: 2em auto;
+		padding: 1em;
 		overflow:hidden;
 	}
 
 	.active {
 		background: $color-accent;
 		color: $color-light;
-		margin: 1em -2em;
-		padding: 1em 2em;
+		margin: 1em -3em;
+		padding: 1em 4em;
 
 		article:first-child div {border-color: $color-light;}
 	}
@@ -397,7 +398,7 @@ main.display {
 			margin: 0;
 		}
 	}
-	.prompt-list .active {
+	.prompt-list {
 		margin: 0 auto;
 		padding: 1em 0;
 
@@ -433,24 +434,17 @@ section {
 	padding: 0 0 1em 0;
 	font-family: $font-headings;
 
-	.number {
-		background: $color-accent;
-		border-radius: 50%;
-		color: $color-light;
-		height: 24px;
-		text-align: center;
-		width: 24px;
-	}
 
 	h4 {
 		margin: 0;
-		padding: 0.15em 0 0 0;
+		padding: 0.5em 0 0 0;
 	}
 }
 .day-prompt {
 
 	.quote {
-		padding: 0 0.5em;
+		font-size: 2em;
+		font-style: italic;
 	}
 	.write {
 		margin: 2em auto 1.5em auto;
@@ -467,7 +461,6 @@ section {
 .tips {
 	font-size: 18px;
 	margin: 0 auto;
-	max-width: 700px;
 
 	h2 {
 		text-align: center;
