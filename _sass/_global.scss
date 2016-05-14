@@ -365,26 +365,28 @@ main.display {
 		}
 	}
 	
-	article {padding: 0.5em 0;}
+	article {
+		font-family: $font-headings;
+		padding: 0.5em 0;
+	}
 	article:first-child {
-		padding: 0.35em 0;
+		padding: 0.65em 0;
 		div {
 			border: 2px solid $color-inactive;
 			border-radius: 50%;
-			font-size: 2em;
-			height: 50px;
+			font-size: 1.5em;
+			height: 40px;
 			margin: 0 auto;
 			padding-bottom: 12px;
 			text-align: center;
-			width: 50px;
+			width: 40px;
 		}
 	}
 
-	article {
-		font-family: $font-headings;
+	article:nth-child(2) {
+		padding-left: 0.5em;
 	}
 }
-
 
 @media (min-width: 650px) {
 	.journal-header {
@@ -733,20 +735,22 @@ section {
 	aside section {
 		background: $color-light;
 		margin-bottom: 1em;
-		padding: 1em;
+		padding: 1em 1em 0 1em;
 
 		.active {
 		background: $color-accent;
 		color: $color-light;
-		margin: 1em -0.5em;
+		margin: 1em -0.5em 0 -0.5em;
 		padding: 1em 0.5em;
 
 		article:first-child div {border-color: $color-light;}
 	}
 	}
 
+
 	aside section {
 		margin-bottom: 1em;
+		padding-bottom: 1em;
 	}
 
 	//DIFFERENT PICTURES
@@ -782,7 +786,11 @@ section {
 	.stats {
 		text-align: center;
 	}
-
+	
+	.leader-link {
+		margin: 1em auto;
+		max-width: 300px;
+	}
 
 }
 
