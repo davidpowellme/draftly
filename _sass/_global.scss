@@ -23,6 +23,7 @@ h6 {
 	font-family: $font-headings;
 	line-height: 1.4;
 	text-transform: uppercase;
+	word-spacing: 0.1em;
 }
 
 img,
@@ -131,6 +132,8 @@ main.display {
 .level-1 {
 	background: $color-light;
 }
+
+.sell {font-family: $font-headings;}
 
 .courses1,
 .courses2,
@@ -337,7 +340,6 @@ main.display {
 	.h-first,
 	.h-second {
 		overflow: hidden;
-
 		span {display: block;}
 		span:first-child {
 			float: left;
