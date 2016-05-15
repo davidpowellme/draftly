@@ -292,6 +292,7 @@ main.display {
             width: 40%;
         }
         span:last-child {
+        	display: none;
             float: right;
             text-align: right;
             width: 20%;
@@ -302,6 +303,22 @@ main.display {
 	}
 
 
+}
+
+@media (min-width: 650px) {
+	.title-wrapper h4 {
+		display: none;
+	}
+
+	.title-wrapper h2 {
+		padding: 0.35em 0 0 0;
+		span:last-child {
+        	display: block;
+            float: right;
+            text-align: right;
+            width: 20%;
+        }
+	}
 }
 
 
