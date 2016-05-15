@@ -353,10 +353,12 @@ main.display {
 	article {overflow: hidden;}
 
 	.h-first {
-
+		padding: 0 0 0 0.5em;
 		h2 {
 			margin: 0;
-			padding: 0.3em 0.5em;
+		}
+		h4 {
+			margin: 0;
 		}
 	}
 	.h-second {display: none;}
