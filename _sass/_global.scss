@@ -467,6 +467,10 @@ section {
 .author {
 	margin: 0 auto;
 	width: 90%;
+
+	article:last-child {
+		float: right;
+	}
 }
 
 .wp-wrapper {
@@ -509,8 +513,17 @@ section {
 	ul {margin: 0;}
 }
 
+.second-write {
+	margin: 1.5em 0;
+
+	article {
+		float: right;
+	}
+}
 @media (min-width: 650px) {
 	.quote {font-size: 2em;}
+
+	.second-write article div {margin: 0;}
 }
 
 @media (min-width: 900px) {
