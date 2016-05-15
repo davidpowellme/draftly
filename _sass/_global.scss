@@ -223,6 +223,7 @@ main.display {
 
 #writing {
 	background: $color-light;
+	overflow: scroll;
 }
 
 .freewriter {
@@ -282,7 +283,7 @@ main.display {
     padding-bottom: 1em;
     h2 {
         margin: 0;
-        padding: 0.35em 0;
+        overflow: hidden;
 
         span {display:block;}
 
@@ -296,6 +297,9 @@ main.display {
             width: 20%;
         }
     }
+	h4 {
+		margin: 0;
+	}
 
 
 }
@@ -592,10 +596,10 @@ section {
 
 #timer {
 	animation: away 500ms linear forwards 3s;
-	height:50px;
-  	margin: 1em auto 0 auto;
+	height:40px;
+  	margin: 0.5em auto 0 auto;
 	position:relative;
-	width:50px;
+	width:40px;
 }
 
 @media (min-width: 650px) {
@@ -764,10 +768,15 @@ section {
 }
 #writer {display: none;}
 
-.slide-up {
-	bottom: 0;
+.g-wrapper {
+	margin: 0 auto;
+	max-width: 300px;
+	overflow: hidden;
 }
 
+#prompt span {
+	&:last-child {display: none;}
+}
 
 
 #generator {
@@ -819,6 +828,13 @@ section {
 		float: left;
 	}
 }
+@media (min-width: 900px) {
+	#prompt span {
+
+		&:first-child {display: none;}
+		&:last-child {display: inline;}
+	}
+} 
 
 //DASHBOARD
 
