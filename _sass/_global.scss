@@ -283,7 +283,7 @@ main.display {
     padding-bottom: 1em;
     h2 {
         margin: 0;
-        padding: 0.35em 0;
+        overflow: hidden;
 
         span {display:block;}
 
@@ -297,6 +297,9 @@ main.display {
             width: 20%;
         }
     }
+	h4 {
+		margin: 0;
+	}
 
 
 }
@@ -765,10 +768,15 @@ section {
 }
 #writer {display: none;}
 
-.slide-up {
-	bottom: 0;
+.g-wrapper {
+	margin: 0 auto;
+	max-width: 300px;
+	overflow: hidden;
 }
 
+#prompt span {
+	&:last-child {display: none;}
+}
 
 
 #generator {
@@ -820,6 +828,13 @@ section {
 		float: left;
 	}
 }
+@media (min-width: 900px) {
+	#prompt span {
+
+		&:first-child {display: none;}
+		&:last-child {display: inline;}
+	}
+} 
 
 //DASHBOARD
 
