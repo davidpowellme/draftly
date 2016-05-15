@@ -535,14 +535,20 @@ section {
 //DAY PROMPT
 
 .prompt {
-	animation: promptBar 500ms linear 3s forwards;
+	// animation: promptBar 500ms linear 3s forwards;
 	background: $color-accent;
 	color: $color-light;
 	font-family: $font-headings;
-	font-size: 2.5em;
 	height: 100vh;
-	padding: 2em 0;
+	padding: 1em 0;
 	text-transform: uppercase;
+
+	div:first-child {
+		font-size: 2em;
+		margin: 0 auto 2em auto;
+		max-width: 800px;
+		width: 90%;
+	}
 }
 
 
