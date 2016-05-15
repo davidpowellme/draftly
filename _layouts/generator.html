@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
+{% include head.html %}
 
-  {% include head.html %}
-
-  <body class="g-page">
-
+<body>
     {% include header.html %}
-
+    <header class="g-prompt">
+        <div>
+            <div class="text" id="prompt">Tap Generate to get a random prompt</div>
+        </div>
+    </header>
     <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+        <div class="wrapper">
+            {{ content }}
+        </div>
     </div>
-
     {% include footer.html %}
-
-  </body>
+</body>
 
 </html>
+
