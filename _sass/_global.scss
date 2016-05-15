@@ -223,6 +223,7 @@ main.display {
 
 #writing {
 	background: $color-light;
+	overflow: scroll;
 }
 
 .freewriter {
@@ -244,7 +245,7 @@ main.display {
     font-family: $font-headings;
     overflow: hidden;
     padding: 1em;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
