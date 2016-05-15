@@ -122,11 +122,7 @@ main.display {
 
 .row {overflow:hidden;}
 
-#writing {
-	background: $color-light;
-	border: 1px solid lighten($color-medium, 50%);
-	height:73vh;
-}
+
 
 //COURSE ICONS
 
@@ -222,11 +218,14 @@ main.display {
 	}
 }
 
+#writing {
+	background: $color-light;
+}
+
 .freewriter {
 	border: none;
-	height: 72vh;
 	overflow: auto;
-	padding: 2em;
+	padding: 1em 1em 6em 1em;
 	resize: none;
 	width: 100%;
 
@@ -570,8 +569,8 @@ section {
 #timer {
 	animation: away 500ms linear forwards 3s;
 	height:50px;
-  	bottom: 2em;
-	position:absolute;
+  	margin: 2.5em auto 0 auto;
+	position:relative;
 	width:50px;
 }
 
@@ -863,6 +862,17 @@ section {
 	}
 	.medium {float: right;}
 
+}
+
+//MODAL STYLES
+
+
+.remodal {
+	.btn {margin: 0 auto;}
+}
+.btn-wrapper {
+	overflow: hidden;
+	margin: 0 auto;
 }
 
 
