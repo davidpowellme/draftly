@@ -46,7 +46,7 @@ li {margin: 1em 0;}
 	margin: 1rem auto;
 	max-width: 800px;
 	overflow: hidden;
-	width: 90%;
+	width: 95%;
 }
 
 .page-content .dash {
@@ -418,6 +418,12 @@ main.display {
 //DAILY PROMPT PAGE
 
 
+.prompt-wrapper {
+	background: $color-light;
+	overflow: hidden;
+	padding: 3em 1em 1em 1em;
+}
+
 .iframe-wrapper {
 	margin: 0 auto;
 	max-width: 560px;
@@ -429,9 +435,10 @@ section {
 }
 
 .day {
-	margin: 0 0 1em 0;
-	padding: 0 0 1em 0;
+	background: $color-accent;
+	color: $color-light;
 	font-family: $font-headings;
+	padding: 1em;
 
 
 	h4 {
@@ -457,12 +464,27 @@ section {
 	}
 }
 
+.author {
+	margin: 0 auto;
+	width: 90%;
+}
+
 .wp-wrapper {
-	margin-right: 1em;
+	margin: 1em auto 3em auto;
+	width: 75%;
+}
+
+@media (min-width: 650px) {
+	.wp-wrapper {
+		width: 100%;
+		margin: 0;
+	}
 }
 
 .writer-pic {
 	border-radius: 50%;
+	display:block;
+	margin: 0 auto;
 }
 .inline-block {
 	display: inline-block;
@@ -478,11 +500,13 @@ section {
 
 .tips {
 	font-size: 18px;
-	margin: 0 auto;
+	margin: 1em auto;
 
 	h2 {
+		margin-bottom: 0.1em;
 		text-align: center;
 	}
+	ul {margin: 0;}
 }
 
 @media (min-width: 650px) {
