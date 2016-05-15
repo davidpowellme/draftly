@@ -103,7 +103,7 @@ $('.ftab').click(function(){
 //RANDOM PROMPT
 
 function postmessage() {
-  var firstnames = ["Brunch sustainable flexitarian shabby chic, banh mi beard mlkshk listicle chillwave YOLO lumbersexual pinterest sriracha.", "Vinyl flannel pork belly, +1 direct trade waistcoat locavore sustainable iPhone mlkshk offal affogato cronut. Messenger bag sustainable selfies meggings quinoa, cardigan yr sriracha.", "Small batch shabby chic meh, chillwave DIY XOXO cred craft beer selfies photo booth farm-to-table.", "Tofu listicle lomo butcher, quinoa paleo pickled freegan affogato hashtag schlitz keffiyeh marfa hammock.", "Portland 90's swag, yr banjo ethical chicharrones umami art party sriracha green juice kombucha keytar fixie farm-to-table.", "Microdosing street art mixtape seitan jean shorts celiac skateboard, ramps occupy bushwick flexitarian.", ];
+  var firstnames = ["You're slowly turning invisible. What happened?", "Your best friend reveals that she is the leader of a secret cult and asks you to join. What do you do?", "Describe the saddest meal you've ever had.", "While on a hike in the woods you trip on what looks like a cellar door. What happens next?", "3 minutes until the whole world changes. Tell us about it.", "Write a modern retelling of your favorite fairy tale or legend.", ];
   var firstname = firstnames[Math.floor(Math.random() * firstnames.length)];
   document.getElementById("prompt").textContent = firstname;
 };
@@ -111,6 +111,8 @@ function postmessage() {
 $('.write').click(function(){
 
   $('#writer').slideToggle(1000);
+
+  $('.g-writer').toggleClass('none');
 
   $('.prompt-text').toggleClass('writing');
 
