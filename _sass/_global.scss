@@ -188,6 +188,17 @@ main.display {
 
 }
 
+.my-journals,
+.more {
+	border-bottom: 2px solid $color-accent;
+	margin-top: 2em;
+	padding: 0.5em 0;
+
+	h2 {
+		margin: 0;
+	}
+}
+
 @media (min-width: 650px) {
 	.courses1,
 	.courses2,
