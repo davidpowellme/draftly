@@ -303,6 +303,7 @@ main.display {
             width: 40%;
         }
         span:last-child {
+        	display: none;
             float: right;
             text-align: right;
             width: 20%;
@@ -313,6 +314,22 @@ main.display {
 	}
 
 
+}
+
+@media (min-width: 650px) {
+	.title-wrapper h4 {
+		display: none;
+	}
+
+	.title-wrapper h2 {
+		padding: 0.35em 0 0 0;
+		span:last-child {
+        	display: block;
+            float: right;
+            text-align: right;
+            width: 20%;
+        }
+	}
 }
 
 
@@ -347,10 +364,12 @@ main.display {
 	article {overflow: hidden;}
 
 	.h-first {
-
+		padding: 0 0 0 0.5em;
 		h2 {
 			margin: 0;
-			padding: 0.3em 0.5em;
+		}
+		h4 {
+			margin: 0;
 		}
 	}
 	.h-second {display: none;}
@@ -606,7 +625,7 @@ section {
 //PIE TIMER
 
 #timer {
-	animation: away 500ms linear forwards 3s;
+	animation: away 500ms linear 3s forwards;	
 	height:40px;
   	margin: 0.5em auto 0 auto;
 	position:relative;

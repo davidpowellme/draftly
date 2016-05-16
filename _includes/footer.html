@@ -110,8 +110,6 @@ function postmessage() {
 
 $('.write').click(function(){
 
-  $('#writer').slideToggle(1000);
-
   $('.g-prompt').toggleClass('writing')
 
   $('.g-writer').toggleClass('none');
@@ -126,7 +124,9 @@ $('.write').click(function(){
 
 $('.back').click(function(){
 
-  $('.g-prompt').toggleClass('writing');
+  $('.g-prompt').toggleClass('writing')
+
+  $('.g-writer').toggleClass('none');
 
   $('.write-bar').toggleClass('none');
 
