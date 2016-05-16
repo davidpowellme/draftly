@@ -596,7 +596,12 @@ section {
 	}
 }
 
-.prompt {animation: promptBar 500ms linear 3s forwards;}
+.prompt {
+	animation-name: promptBar;
+	animation-duration: 500ms;
+	animation-direction: forwards;
+	animation-delay: 3s;
+}
 
 
 @keyframes promptBar {
@@ -614,7 +619,10 @@ section {
 //PIE TIMER
 
 #timer {
-	animation: away 500ms linear forwards 3s;
+	animation-name: away;
+	animation-duration: 500ms;
+	animation-direction: forwards;
+	animation-delay: 3s;
 	height:40px;
   	margin: 0.5em auto 0 auto;
 	position:relative;
