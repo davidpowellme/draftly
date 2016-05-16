@@ -614,7 +614,7 @@ section {
 //PIE TIMER
 
 #timer {
-	animation: away 500ms linear forwards 3s;
+	animation: away 500ms linear 3s forwards;	
 	height:40px;
   	margin: 0.5em auto 0 auto;
 	position:relative;
