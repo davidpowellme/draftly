@@ -44,7 +44,7 @@ li {margin: 1em 0;}
 
 
 .page-content .wrapper {
-	margin: 1rem auto;
+	margin: 1em auto 4em auto;
 	max-width: 800px;
 	overflow: hidden;
 	width: 95%;
@@ -139,7 +139,8 @@ main.display {
 .courses2,
 .courses3,
 .courses4,
-.courses5 {
+.courses5,
+.courses6 {
 	color: $color-light;
 	cursor: pointer;
 	margin: 0 auto;
@@ -175,7 +176,8 @@ main.display {
 	.courses2,
 	.courses3,
 	.courses4,
-	.courses5 {
+	.courses5,
+	.courses6 {
 		
 		div:last-child {background: $color-light;}
 	
@@ -204,7 +206,8 @@ main.display {
 	.courses2,
 	.courses3,
 	.courses4,
-	.courses5 {
+	.courses5,
+	.courses6 {
 		h2 {
 			font-size: 1.25em;
 			padding-left: 0.5em;
