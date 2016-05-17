@@ -597,8 +597,23 @@ section {
 
 //DAY PROMPT
 
+.g-prompt {
+	background: $color-accent;
+	color: $color-light;
+	font-family: $font-headings;
+	font-size: 2em;
+	height: 100vh;
+	padding: 1em 0;
+	text-transform: uppercase;
 
-.g-prompt,
+	.text {
+		margin: 0 auto;
+		max-width: 800px;
+		width: 90%;
+	}
+}
+
+
 .prompt {
 	background: $color-accent;
 	color: $color-light;
