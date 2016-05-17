@@ -249,6 +249,7 @@ main.display {
 	}
 }
 
+
 	
 .write-bar {
     background: $color-dark;
@@ -256,7 +257,7 @@ main.display {
     font-family: $font-headings;
     overflow: hidden;
     padding: 1em;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -270,6 +271,10 @@ main.display {
     	&:last-child {margin-right: 0;}
     }
 }
+ 
+.fixfixed .write-bar { 
+    position: absolute; 
+} 
 
 //DASH
 
